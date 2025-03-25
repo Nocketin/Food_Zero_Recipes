@@ -1,27 +1,7 @@
-/* rufina-regular - latin */
+
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/rufina-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* rufina-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../assets/fonts/rufina-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-/* lato-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: "Euclid";
+    src: url("../assets/fonts/euclid-flex.ttf") format("truetype");
   }
 
 
@@ -54,7 +34,7 @@ nav{
     justify-content: center;
     
     color: white;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -70,7 +50,7 @@ nav{
 .navigation{
     display: flex;
     align-items: center;
-    font-family: 'Rusfina';
+    font-family: 'Euclid';
     gap: 50px;
     
     color: white;
@@ -79,7 +59,7 @@ nav{
 }
 
 .contacts{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -90,7 +70,7 @@ nav{
 }
 
 .advices{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -113,7 +93,7 @@ nav{
 }
 
 .header_category{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -130,7 +110,7 @@ nav{
     width: 60%;
     height: 250px;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 88px;
@@ -143,7 +123,7 @@ nav{
     display: flex;
     align-items: center;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -156,6 +136,19 @@ nav{
     height: 60px;
     width: 60%;
     gap: 14px;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 84px;
+}
+
+.avatar_img{
+    width: 84px;
+    height: 84px;
 }
 
 footer{
@@ -177,7 +170,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 68px;
@@ -187,7 +180,7 @@ footer{
 }
 
 .footer_contact{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -199,7 +192,7 @@ footer{
 }
 
 .footer_contacts_info{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -220,7 +213,7 @@ footer{
 }
 
 .footer_never_miss_a_recipe{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -244,7 +237,7 @@ footer{
 
     border: 2px solid #FFFFFF;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -268,7 +261,7 @@ footer{
 
     background: #5E6600;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -286,7 +279,7 @@ footer{
 .join_text{
     width: 100%;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -312,7 +305,7 @@ footer{
 }
 .all_rights_reserved{
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -355,7 +348,7 @@ main{
 }
 
 .breadcrumbs{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -369,7 +362,7 @@ main{
 }
 
 .recipe_text{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -391,7 +384,7 @@ main{
 .first_img_container{
     width: 60%;
 
-    background-image: url(/assets/img/meat_recipe_1_img.png);
+    background-image: url(/assets/img/1_1.jpg);
     background-size: 100% 100%;
 }
 .second_img_container{
@@ -407,7 +400,7 @@ main{
 }
 
 .recipe_text_2{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: italic;
     font-weight: 700;
     font-size: 38px;
@@ -433,7 +426,7 @@ main{
     margin-bottom: 80px;
 }
 .tags_word{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -443,7 +436,7 @@ main{
 }
 
 .tag{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -468,7 +461,7 @@ main{
 }
 
 .author_name{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -478,7 +471,7 @@ main{
 }
 
 .author_description{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -500,7 +493,7 @@ main{
 }
     
 .search_input{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -512,7 +505,7 @@ main{
     border: none;
 
     &::placeholder{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -536,7 +529,7 @@ main{
     display: flex;
     flex-direction: column;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -564,7 +557,7 @@ main{
     justify-content: space-between;
     width: 100%;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -588,7 +581,7 @@ main{
 }
 
 .sidebar_comment{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -617,7 +610,7 @@ main{
 }
 
 .sidebar_post_title{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -627,7 +620,7 @@ main{
 }
 
 .sidebar_post_data{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -677,7 +670,7 @@ main{
 }
 
 .other_recipe_title{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -689,7 +682,7 @@ main{
 }
 
 .recipe_navigation{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -743,7 +736,7 @@ main{
 }
 
 .comments_section_count{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -795,7 +788,7 @@ main{
     display: flex;
     justify-content: space-between;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -807,7 +800,7 @@ main{
 }
 
 .comment_date{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -819,7 +812,7 @@ main{
 }
 
 .comment_text{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -835,7 +828,7 @@ main{
 }
 
 .leave_a_reply_title{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -856,7 +849,7 @@ main{
     margin-bottom: 64px;
 }
 .reply_content_label{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -874,7 +867,7 @@ main{
 
     border: #000000 solid 2px;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -890,7 +883,7 @@ textarea {
 }
 
 .post_comment_button{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -904,3 +897,7 @@ textarea {
 
     width: 20%;
 }
+
+*{
+    font-family: "Euclid";
+  }
