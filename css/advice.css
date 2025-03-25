@@ -1,0 +1,487 @@
+/* rufina-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/rufina-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* rufina-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/rufina-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* Header */
+header{
+    background-image: url(../assets/img/meat_header.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.logo_burger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    margin-left: 150px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 64px;
+    
+    background-image: url(../assets/svg/logo_svg.svg);   
+    width: 192px;
+    height: 115px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    font-family: 'Rusfina';
+    gap: 50px;
+    
+    color: white;
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+.contacts{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    padding: 25px;
+    border: 2px solid white;
+}
+
+.advices{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    padding: 25px;
+    border: 2px solid white;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_category_container{
+    display: flex;
+    width: 60%;
+    
+}
+
+.header_category{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+
+    padding: 10px 50px;
+    border: 2px solid white;
+    
+}
+
+.header_title{
+    width: 60%;
+    height: 250px;
+
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 120px;
+
+    color: #FFFFFF;
+}
+
+.post_data{
+    display: flex;
+    align-items: center;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    height: 60px;
+    width: 60%;
+    gap: 14px;
+}
+
+    /* Footer */
+footer{
+    width: 100%;
+    height: 700px;
+    background: #233000;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_info{
+    display: flex;
+    height: 700px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer_food_zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 84px;
+
+    color: #FFFFFF;
+}
+
+.footer_contact{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 50px;
+}
+
+.footer_contacts_info{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    margin-bottom: 25px;
+}
+
+.footer_email{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 248px;
+}
+
+.footer_never_miss_a_recipe{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 60px;
+}
+
+.input_email{
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px 40px;
+
+    width: 60%;
+    height: 96px;
+
+    border: 2px solid #FFFFFF;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;   
+}
+
+.subscribe_button{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 46px;
+
+    margin: 0 auto;
+    width: 35%;
+    height: 90px;
+
+    background: #5E6600;
+
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+.subscribe_form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.join_text{
+    width: 100%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.footer_line{
+    width: 100%;
+}
+
+.footer_socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.all_rights_reserved{
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+    letter-spacing: 0.02em;
+
+    color: white;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+    /* Main */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advice_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 130px;
+    width: 60%;
+}
+
+.advice_breadcrumbs{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.advice_breadcrumbs_previous{
+    color: #B0B0B0;
+}
+
+.advice_title{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #4D4D4D;
+}
+
+.advice_img_container{
+    height: 726px;
+    width: 130%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.advice_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    
+    letter-spacing: 0.02em;
+
+    color: #4D4D4D;
+}
+
+.advice_image{
+    background-image: url(/assets/img/advice_back_img.png);
+    width: 100vw;
+    height: 534px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+}
+
+.advice_image_text{
+    width: 60%;
+    background-image: url(/assets/svg/quotes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.tags{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.tags_word{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.tag{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+
+    border: 1px solid #000000 ;
+    padding: 10px 20px;
+}
+
+.recipe_author{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.author_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.author_name{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.author_description{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+    letter-spacing: 0.02em;
+
+    color: #4D4D4D;
+}
+
+.advice_line{
+    width: 80vw;
+}
+
