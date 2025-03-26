@@ -128,7 +128,7 @@ nav{
 
 .header_title{
     width: 60%;
-    height: 250px;
+    height: auto;
 
     font-family: 'Rufina';
     font-style: normal;
@@ -323,17 +323,17 @@ footer{
     color: white;
 }
 
-.social_icons{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
+    .social_icons{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-.video_container{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
+    .video_container{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
 
 
     /* Comments Section */
@@ -517,10 +517,232 @@ footer{
         padding: 20px 20px;
     
         width: 20%;
+        background-color: white;
     }
 
     main{
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+
+
+    @media (max-width: 381px){
+        header {
+            height: auto; 
+            background-size: cover;
+        }
+    
+        .divider{
+            display: none;
+        }
+        nav {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding-top: 10px;
+        }
+    
+        .logo_burger {
+            margin-left: 0;
+        }
+    
+        .burger{
+            display: flex;
+            margin-left: 20px;
+        }
+    
+        .logo {
+            font-size: 40px;
+            width: 150px;
+            height: 90px;
+            background-size: contain;
+        }
+    
+        .navigation {
+            display: none;
+        }
+    
+        .divider{
+            display: none;
+        }
+    
+        .header_text {
+            margin-top: 50px;
+        }
+    
+        .header_title {
+            width: 90%;
+            font-size: 48px;
+            line-height: 50px;
+        }
+    
+        .avatar_img{
+            width: 62px;
+            height: 62px;
+        }
+    
+        .avatar{
+            padding: 22px;
+        }
+    
+        .recipe_info {
+            width: 100%;        
+        }
+    
+        .post_data {
+            height: auto;
+            font-size: 16px;
+            margin-bottom: 0px;
+            width: 95%;
+            gap: 5px;
+        }
+    
+        .comments_count{
+            display: none;
+        }
+    
+        .time{
+            display: none;
+        }
+
+        .header_category{
+            display: none;
+        }
+
+        iframe{
+            height: 400px;
+        }
+        .video_container{
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 90%;
+            height: auto;
+        }
+
+        .comments_section {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    
+        .comments_container{
+            margin-bottom: 20px;
+        }
+    
+        .comment_section_line{
+            margin-bottom: 50px;
+        }
+    
+        .comments_section_count {
+            font-size: 32px;
+            line-height: 44px;
+            margin-bottom: 40px;
+        }
+    
+    
+    
+        .comment_author_img {
+           display: none;
+        }
+    
+        .comment_data {
+            width: 100%;
+        }
+    
+    
+        .comment_date {
+            font-size: 18px;
+        }
+    
+        .comment_text {
+            font-size: 18px;
+        }
+    
+        .leave_a_reply_title {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+    
+        .reply_content {
+            margin-left: 20px;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    
+        .reply_content_label {
+            font-size: 18px;
+        }
+    
+        .reply_content_textarea {
+            font-size: 18px;
+            padding: 10px;
+        }
+    
+        .post_comment_button {
+            font-size: 20px;
+            padding: 15px;
+            width: 100%;
+        }
+    
+    
+        footer {
+            height: auto;
+            padding: 40px 0;
+        }
+    
+        .footer_info {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: auto;
+            gap: 40px;
+        }
+    
+        .footer_food_zero {
+            font-size: 48px;
+        }
+    
+        .footer_contact {
+            font-size: 24px;
+        }
+    
+        .footer_contacts_info {
+            font-size: 16px;
+        }
+    
+        .footer_email {
+            width: 90%;
+            height: auto;
+        }
+    
+        .input_email {
+            width: 100%;
+            height: 60px;
+            font-size: 18px;
+            padding: 15px;
+        }
+    
+        .subscribe_button {
+            width: 100%;
+            height: 70px;
+            font-size: 24px;
+        }
+    
+        .footer_socials {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            height: auto;
+        }
+    
+        .all_rights_reserved {
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        .social_icons {
+            gap: 15px;
+        }
     }
