@@ -902,6 +902,7 @@ textarea {
     padding: 20px 20px;
 
     width: 20%;
+
     background-color: #FFFFFF;
 }
 
@@ -1312,3 +1313,5 @@ textarea {
         gap: 15px;
     }
 }
+  }
+
