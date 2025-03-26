@@ -40,15 +40,15 @@
                 <div class="author">
                     Анна Иванова
                 </div>
-                <img src="./assets/svg/divider.svg" alt="divider">
+                <img src="./assets/svg/divider.svg" alt="divider" class="divider">
                 <div class="date">
                     Март 20, 2023
                 </div>
-                <img src="./assets/svg/divider.svg" alt="divider">
+                <img src="./assets/svg/divider.svg" alt="divider" class="divider">
                 <div class="time">
                     14:30
                 </div>
-                <img src="./assets/svg/divider.svg" alt="divider">
+                <img src="./assets/svg/divider.svg" alt="divider" class="divider">
                 <div class="comments_count">
                     5 комментариев
                 </div>
@@ -68,10 +68,17 @@
                     </div>
                     <div class="second_img_container">
                         <div class="small_img_container">
+
+                            <img src="./assets/img/1_2.jpg" alt="Нарезка картофеля" class="small_img">
+                        </div>
+                        <div class="small_img_container">
+                            <img src="./assets/img/1_3.jpg" alt="Запеченный картофель" class="small_img">
+
                             <img src="./assets/img/1_2.jpg" alt="Нарезка картофеля">
                         </div>
                         <div class="small_img_container">
                             <img src="./assets/img/1_3.jpg" alt="Запеченный картофель">
+
                         </div>
                     </div>
                 </div>
@@ -118,8 +125,8 @@
                     </div>
                 </div>
                 <div class="recipe_author">
-                    <div class="author_avatar">
-                        <img src="./assets/img/author_avatar_img.png" alt="avatar">
+                    <div>
+                        <img src="./assets/img/author_avatar_img.png" alt="avatar" class="author_avatar">
                     </div>
                     <div class="author_info">
                         <div class="author_name">
@@ -453,9 +460,14 @@
                 </label>
                 <textarea id="reply_website_textarea" name="reply_content_textarea" class="reply_content_textarea"></textarea>  
             </div>
+
+            <button type="submit" class="post_comment_button">Опубликовать комментарий</button>
+         
+
             <div class="post_comment_button">
                 Опубликовать комментарий
             </div>
+
         </div>
     </section>
     </main>
@@ -481,12 +493,20 @@
                   Не пропустите новые рецепты
               </div>
               <div class="subscribe_form">
+
+                <input type="email" class="input_email" placeholder="Адрес электронной почты">
+
+             
+                  <button type="submit" class="subscribe_button">Отправить</button>
+                 
+
                   <div class="input_email">
                       Адрес электронной почты
                   </div>
                   <div class="subscribe_button">
                       Подписаться
                   </div>
+
               </div>
               <div class="join_text">
                   Присоединяйтесь к нашим подписчикам и получайте лучшие рецепты каждую неделю!
