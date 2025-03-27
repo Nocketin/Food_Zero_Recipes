@@ -1,28 +1,11 @@
-/* rufina-regular - latin */
+/* Euclid-regular - latin */
+
+
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/rufina-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: "Euclid";
+    src: url("./assets/fonts/euclid-flex.ttf") format("truetype");
   }
-  /* rufina-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./assets/fonts/rufina-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-/* lato-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+
 
 
 header{
@@ -48,13 +31,18 @@ nav{
     gap:50px;
     margin-left: 150px;
 }
+
+.burger{
+    display: none;
+}
+
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     
     color: white;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -67,10 +55,11 @@ nav{
     background-repeat: no-repeat;
 }
 
+
 .navigation{
     display: flex;
     align-items: center;
-    font-family: 'Rusfina';
+    font-family: 'Euclid';
     gap: 50px;
     
     color: white;
@@ -79,7 +68,7 @@ nav{
 }
 
 .contacts{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -90,7 +79,7 @@ nav{
 }
 
 .advices{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -110,7 +99,7 @@ nav{
 .header_title{
     height: 120px;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 108px;
@@ -124,7 +113,7 @@ nav{
 .header_description{
     height: 34px;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -167,6 +156,41 @@ main{
     height: 100%;
 }
 
+.recipe_img1{
+    background-image: url(./assets/img/2.jpg);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+}
+
+.recipe_img2{
+    background-image: url(./assets/img/3.jfif);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+}
+
+.recipe_img3{
+    background-image: url(./assets/img/4.jpg);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+}
+
+.recipe_img4{
+    background-image: url(./assets/img/5.jpg);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+}
+
+.recipe_img5{
+    background-image: url(./assets/img/7.jpg);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 100%;
+}
+
 .recipe_info{
     width: 60%;
     height: 100%;
@@ -180,7 +204,7 @@ main{
     justify-content: space-between;
     align-items: center;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -196,11 +220,24 @@ main{
     margin-bottom: 50px;
 }
 
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 84px;
+}
+
+.avatar_img{
+    width: 84px;
+    height: 84px;
+}
+
 .recipe_title{
     width: 80%;
-    height: 128px;
+    height: auto;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -218,9 +255,9 @@ main{
 
 .ingredients{
     width: 80%;
-    height: 31px;
+    height: auto;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -236,7 +273,7 @@ main{
     width: 80%;
     height: 34px;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -273,7 +310,7 @@ main{
 
     border: 2px solid #000000;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -303,7 +340,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 68px;
@@ -313,7 +350,7 @@ footer{
 }
 
 .footer_contact{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -325,7 +362,7 @@ footer{
 }
 
 .footer_contacts_info{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -346,7 +383,7 @@ footer{
 }
 
 .footer_never_miss_a_recipe{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -370,7 +407,7 @@ footer{
 
     border: 2px solid #FFFFFF;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -379,6 +416,8 @@ footer{
     letter-spacing: 0.02em;
 
     color: #FFFFFF;   
+
+    background-color: #233000;
 }
 
 .subscribe_button{
@@ -394,7 +433,7 @@ footer{
 
     background: #5E6600;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -412,7 +451,7 @@ footer{
 .join_text{
     width: 100%;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -438,7 +477,7 @@ footer{
 }
 .all_rights_reserved{
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -457,7 +496,7 @@ footer{
 
 @media (max-width: 381px) {
     header {
-        height: 400px; /* Уменьшаем высоту заголовка */
+        height: 400px; 
         background-size: cover;
     }
 
@@ -470,7 +509,11 @@ footer{
 
     .logo_burger {
         margin-left: 0;
-        gap: 20px;
+    }
+
+    .burger{
+        display: flex;
+        margin-left: 20px;
     }
 
     .logo {
@@ -505,8 +548,9 @@ footer{
     }
 
     .recipes_section {
-        width: 90%;
-        gap: 60px;
+        margin-top: 50px;
+        width: 100%;
+        gap: 100px;
     }
 
     .recipe_card {
@@ -520,18 +564,48 @@ footer{
         background-size: cover;
     }
 
+    .avatar_img{
+        width: 62px;
+        height: 62px;
+    }
+
+    .avatar{
+        padding: 22px;
+    }
+
     .recipe_info {
         width: 100%;        
     }
 
     .post_data {
         height: auto;
-        font-size: 10px;
+        font-size: 16px;
+        margin-bottom: 0px;
+        width: 95%;
+        gap: 5px;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    .comments_count{
+        text-align: center;
+    }
+
+    .time{
+        display: none;
     }
 
     .recipe_title {
         font-size: 32px;
         height: auto;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .recipe_line{
+        margin-bottom: 10px;
     }
 
     .ingredients {
@@ -541,9 +615,7 @@ footer{
 
     .read_more {
         font-size: 20px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    
     }
 
     .pagination {
@@ -614,3 +686,7 @@ footer{
         gap: 15px;
     }
 }
+
+*{
+    font-family: "Euclid";
+  }

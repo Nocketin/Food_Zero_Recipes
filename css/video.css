@@ -1,27 +1,7 @@
-/* rufina-regular - latin */
+/* Euclid-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/rufina-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* rufina-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rufina';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../assets/fonts/rufina-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-/* lato-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-family: "Euclid";
+    src: url("../assets/fonts/euclid-flex.ttf") format("truetype");
   }
 
 
@@ -29,7 +9,7 @@ header{
     background-image: url(../assets/img/meat_header.png);
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
 nav{
@@ -54,7 +34,7 @@ nav{
     justify-content: center;
     
     color: white;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -70,7 +50,7 @@ nav{
 .navigation{
     display: flex;
     align-items: center;
-    font-family: 'Rusfina';
+    font-family: 'Euclid';
     gap: 50px;
     
     color: white;
@@ -79,7 +59,7 @@ nav{
 }
 
 .contacts{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -90,7 +70,7 @@ nav{
 }
 
 .advices{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -113,7 +93,7 @@ nav{
 }
 
 .header_category{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -128,13 +108,13 @@ nav{
 
 .header_title{
     width: 60%;
-    height: 250px;
+    height: auto;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 88px;
-    line-height: 120px;
+    line-height: 100px;
 
     color: #FFFFFF;
 }
@@ -143,12 +123,14 @@ nav{
     display: flex;
     align-items: center;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
 
+    margin-top: 20px;
+    margin-bottom: 50px;
     letter-spacing: 0.02em;
 
     color: #FFFFFF;
@@ -177,7 +159,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 68px;
@@ -187,7 +169,7 @@ footer{
 }
 
 .footer_contact{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -199,7 +181,7 @@ footer{
 }
 
 .footer_contacts_info{
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -220,7 +202,7 @@ footer{
 }
 
 .footer_never_miss_a_recipe{
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -244,7 +226,7 @@ footer{
 
     border: 2px solid #FFFFFF;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -253,6 +235,8 @@ footer{
     letter-spacing: 0.02em;
 
     color: #FFFFFF;   
+
+    background-color: #233000;
 }
 
 .subscribe_button{
@@ -268,7 +252,7 @@ footer{
 
     background: #5E6600;
 
-    font-family: 'Rufina';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -286,7 +270,7 @@ footer{
 .join_text{
     width: 100%;
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -312,7 +296,7 @@ footer{
 }
 .all_rights_reserved{
 
-    font-family: 'Lato';
+    font-family: 'Euclid';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -323,17 +307,17 @@ footer{
     color: white;
 }
 
-.social_icons{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
+    .social_icons{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-.video_container{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
+    .video_container{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
 
 
     /* Comments Section */
@@ -357,7 +341,7 @@ footer{
     }
     
     .comments_section_count{
-        font-family: 'Rufina';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -409,7 +393,7 @@ footer{
         display: flex;
         justify-content: space-between;
     
-        font-family: 'Lato';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -421,7 +405,7 @@ footer{
     }
     
     .comment_date{
-        font-family: 'Lato';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -433,7 +417,7 @@ footer{
     }
     
     .comment_text{
-        font-family: 'Lato';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -449,7 +433,7 @@ footer{
     }
     
     .leave_a_reply_title{
-        font-family: 'Rufina';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -470,7 +454,7 @@ footer{
         margin-bottom: 64px;
     }
     .reply_content_label{
-        font-family: 'Lato';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -482,13 +466,17 @@ footer{
     
         margin-bottom: 10px;
     }
+
+    *{
+        font-family: "Euclid";
+      }
     
     .reply_content_textarea{
         width: 100%;
     
         border: #000000 solid 2px;
     
-        font-family: 'Lato';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -504,7 +492,7 @@ footer{
     }
     
     .post_comment_button{
-        font-family: 'Rufina';
+        font-family: 'Euclid';
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -517,10 +505,236 @@ footer{
         padding: 20px 20px;
     
         width: 20%;
+        background-color: white;
     }
 
     main{
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .avatar_img{
+        width: 84px;
+        height: 84px;
+    }
+
+
+    @media (max-width: 381px){
+        header {
+            height: auto; 
+            background-size: cover;
+        }
+    
+        .divider{
+            display: none;
+        }
+        nav {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding-top: 10px;
+        }
+    
+        .logo_burger {
+            margin-left: 0;
+        }
+    
+        .burger{
+            display: flex;
+            margin-left: 20px;
+        }
+    
+        .logo {
+            font-size: 40px;
+            width: 150px;
+            height: 90px;
+            background-size: contain;
+        }
+    
+        .navigation {
+            display: none;
+        }
+    
+        .divider{
+            display: none;
+        }
+    
+        .header_text {
+            margin-top: 50px;
+        }
+    
+        .header_title {
+            width: 90%;
+            font-size: 48px;
+            line-height: 50px;
+        }
+    
+        .avatar_img{
+            width: 84px;
+            height: 84px;
+        }
+    
+        .avatar{
+            padding: 22px;
+        }
+    
+        .recipe_info {
+            width: 100%;        
+        }
+    
+        .post_data {
+            height: auto;
+            font-size: 16px;
+            margin-bottom: 0px;
+            width: 95%;
+            gap: 5px;
+        }
+    
+        .comments_count{
+            display: none;
+        }
+    
+        .time{
+            display: none;
+        }
+
+        .header_category{
+            display: none;
+        }
+
+        iframe{
+            height: 400px;
+        }
+        .video_container{
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 90%;
+            height: auto;
+        }
+
+        .comments_section {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    
+        .comments_container{
+            margin-bottom: 20px;
+        }
+    
+        .comment_section_line{
+            margin-bottom: 50px;
+        }
+    
+        .comments_section_count {
+            font-size: 32px;
+            line-height: 44px;
+            margin-bottom: 40px;
+        }
+    
+    
+    
+        .comment_author_img {
+           display: none;
+        }
+    
+        .comment_data {
+            width: 100%;
+        }
+    
+    
+        .comment_date {
+            font-size: 18px;
+        }
+    
+        .comment_text {
+            font-size: 18px;
+        }
+    
+        .leave_a_reply_title {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+    
+        .reply_content {
+            margin-left: 20px;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    
+        .reply_content_label {
+            font-size: 18px;
+        }
+    
+        .reply_content_textarea {
+            font-size: 18px;
+            padding: 10px;
+        }
+    
+        .post_comment_button {
+            font-size: 20px;
+            padding: 15px;
+            width: 100%;
+        }
+    
+    
+        footer {
+            height: auto;
+            padding: 40px 0;
+        }
+    
+        .footer_info {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: auto;
+            gap: 40px;
+        }
+    
+        .footer_food_zero {
+            font-size: 48px;
+        }
+    
+        .footer_contact {
+            font-size: 24px;
+        }
+    
+        .footer_contacts_info {
+            font-size: 16px;
+        }
+    
+        .footer_email {
+            width: 90%;
+            height: auto;
+        }
+    
+        .input_email {
+            width: 100%;
+            height: 60px;
+            font-size: 18px;
+            padding: 15px;
+        }
+    
+        .subscribe_button {
+            width: 100%;
+            height: 70px;
+            font-size: 24px;
+        }
+    
+        .footer_socials {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            height: auto;
+        }
+    
+        .all_rights_reserved {
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        .social_icons {
+            gap: 15px;
+        }
     }
