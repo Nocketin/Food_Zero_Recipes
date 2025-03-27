@@ -410,7 +410,7 @@ main{
 .first_img_container{
     width: 60%;
 
-    background-image: url(/assets/img/1_1.jpg);
+    background-image: url(../assets/img/1_1.jpg);
     background-size: 100% 100%;
 }
 .second_img_container{
