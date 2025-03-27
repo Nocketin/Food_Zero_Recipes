@@ -374,7 +374,10 @@ footer{
     color: #FFFFFF;
 }
 
-.footer_contacts{
+a{
+    text-decoration: none;
+}
+.footer_contact{
     font-family: 'Euclid';
     font-style: normal;
     font-weight: 700;
