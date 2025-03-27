@@ -84,6 +84,9 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .advices{
@@ -95,6 +98,9 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .header_text{
