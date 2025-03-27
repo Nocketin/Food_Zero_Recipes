@@ -190,6 +190,9 @@ footer{
     color: #FFFFFF;
 
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
 }
 
 .footer_contacts_info{
@@ -622,6 +625,7 @@ main{
 
     .footer_contact {
         font-size: 24px;
+
     }
 
     .footer_contacts_info {

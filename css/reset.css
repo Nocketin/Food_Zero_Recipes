@@ -202,10 +202,9 @@ button,
 input,
 select,
 textarea {
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
-    vertical-align: baseline; /* 3 */
-    
+    font-size: 100%;
+    margin: 0; 
+    vertical-align: baseline;
 }
 
 /**
