@@ -389,7 +389,7 @@ main{
 }
 
 .advice_image{
-    background-image: url(/assets/img/advice_back_img.png);
+    background-image: url(../assets/img/advice_back_img.png);
     width: 100vw;
     height: 534px;
 
@@ -408,7 +408,7 @@ main{
 
 .advice_image_text{
     width: 60%;
-    background-image: url(/assets/svg/quotes.svg);
+    background-image: url(../assets/svg/quotes.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;

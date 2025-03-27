@@ -672,7 +672,7 @@ main{
 
 
 .previous_recipe{
-    background-image: url(/assets/img/previous_recipe_img.png);
+    background-image: url(../assets/img/previous_recipe_img.png);
     background-size: 100% 100%;
 
     display: flex;
@@ -686,7 +686,7 @@ main{
 }
 
 .next_recipe{
-    background-image: url(/assets/img/next_recipe_img.png);
+    background-image: url(../assets/img/next_recipe_img.png);
     background-size: 100% 100%;
 
     display: flex;
@@ -1121,7 +1121,7 @@ textarea {
         margin-top: 20px;
         margin-bottom: 0px;
     
-        background-image: url(/assets/svg/quotes.svg);
+        background-image: url(../assets/svg/quotes.svg);
         background-repeat: no-repeat;
         background-position: right;
         background-size: contain;
