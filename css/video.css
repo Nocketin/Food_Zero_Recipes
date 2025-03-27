@@ -47,6 +47,23 @@ nav{
     background-repeat: no-repeat;
 }
 
+.burger{
+    display: none;
+}
+
+.burger-toggle{
+    display: none;
+}
+.nav-links{
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
 .navigation{
     display: flex;
     align-items: center;
@@ -67,6 +84,9 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: white;
 }
 
 .advices{
@@ -78,6 +98,9 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: white;
 }
 
 .header_text{
@@ -543,6 +566,27 @@ footer{
         .burger{
             display: flex;
             margin-left: 20px;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            background-color: #d3a05c;
+            width: 200px;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+    
+        .nav-links li {
+            margin: 20px 0;
+        }
+    
+        .burger-toggle:checked +.nav-links {
+            display: flex;
         }
     
         .logo {

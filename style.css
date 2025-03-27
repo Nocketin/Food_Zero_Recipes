@@ -6,13 +6,12 @@
     src: url("./assets/fonts/euclid-flex.ttf") format("truetype");
   }
 
-
-
 header{
     background-image: url(./assets/img/header_img.png);
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 nav{
@@ -76,6 +75,9 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: white;
 }
 
 .advices{
@@ -87,17 +89,33 @@ nav{
 
     padding: 25px;
     border: 2px solid white;
+
+    text-decoration: none;
+    color: white;
 }
 
 .header_text{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 20px;
     align-items: center;
+    padding: 10px; 
+}
+.burger-toggle{
+    display: none;
+}
+.nav-links{
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 .header_title{
-    height: 120px;
+    height: auto;
 
     font-family: 'Euclid';
     font-style: normal;
@@ -108,10 +126,11 @@ nav{
     text-align: center;
 
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .header_description{
-    height: 34px;
+    height: auto;
 
     font-family: 'Euclid';
     font-style: normal;
@@ -214,7 +233,7 @@ main{
 
     color: #5E6600;
 
-    height: 60px;
+    height: auto;
     width: 80%;
 
     margin-bottom: 50px;
@@ -285,6 +304,8 @@ main{
 
     display: flex;
     gap: 10px;
+
+    text-decoration: none;
 }
 
 .pagination{
@@ -319,6 +340,10 @@ main{
     letter-spacing: 0.02em;
 
     color: #000000;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 footer{
@@ -496,7 +521,7 @@ footer{
 
 @media (max-width: 381px) {
     header {
-        height: 400px; 
+        height: auto; 
         background-size: cover;
     }
 
@@ -514,6 +539,28 @@ footer{
     .burger{
         display: flex;
         margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #131d30;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger-toggle:checked + .nav-links {
+        display: flex;
     }
 
     .logo {
@@ -574,15 +621,16 @@ footer{
     }
 
     .recipe_info {
-        width: 100%;        
+        width: 100%;
     }
 
     .post_data {
         height: auto;
         font-size: 16px;
         margin-bottom: 0px;
-        width: 95%;
+        width: 100%;
         gap: 5px;
+        margin-left: -20px;
     }
 
     .divider{
@@ -591,6 +639,7 @@ footer{
 
     .comments_count{
         text-align: center;
+        word-wrap: break-word;
     }
 
     .time{
@@ -615,7 +664,6 @@ footer{
 
     .read_more {
         font-size: 20px;
-    
     }
 
     .pagination {
