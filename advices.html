@@ -1,301 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodZero</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
+      <nav>
         <div class="logo_burger">
-            <div class="logo">
-                FoodZero
-            </div>
+          <div class="logo">FoodZero</div>
 
-            <label for="burger-toggle" class="burger">
-                <img src="./assets/svg/burger.svg" alt="burger_svg">
-            </label>
+          <label for="burger-toggle" class="burger">
+            <img src="./assets/svg/burger.svg" alt="burger_svg" />
+          </label>
 
-            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+          <input type="checkbox" id="burger-toggle" class="burger-toggle" />
 
-            <ul class="nav-links">
-                <a href="https://nocketin.github.io/Food_Zero_Recipes/"><li>Рецепты</li></a>
-                <img src="./assets/svg/line.svg" alt="">
-                <a href="https://nocketin.github.io/Food_Zero_Recipes/navigation"><li>Контакты</li></a>
-            </ul>
-
+          <ul class="nav-links">
+            <a href="https://nocketin.github.io/Food_Zero_Recipes/"
+              ><li>Рецепты</li></a
+            >
+            <img src="./assets/svg/line.svg" alt="" />
+            <a href="https://nocketin.github.io/Food_Zero_Recipes/navigation"
+              ><li>Контакты</li></a
+            >
+          </ul>
         </div>
-            <div class="navigation">
-                <a href ="https://nocketin.github.io/Food_Zero_Recipes/navigation" class="contacts"> 
-                    Контакты
-                </a>
-                <a href ="https://nocketin.github.io/Food_Zero_Recipes/" class="advices">
-                    Рецепты
-                </a>
-            </div>
-        </nav>
-
-        <div class="header_text">
-            <div class="header_title">
-                Интересные кулинарные советы
-            </div>
-            
-            <div class="header_description">
-                Это идеальное место, чтобы делиться своими кулинарными шедеврами и вдохновлять других каждый день
-            </div>
+        <div class="navigation">
+          <a
+            href="https://nocketin.github.io/Food_Zero_Recipes/navigation"
+            class="contacts"
+          >
+            Контакты
+          </a>
+          <a
+            href="https://nocketin.github.io/Food_Zero_Recipes/"
+            class="advices"
+          >
+            Рецепты
+          </a>
         </div>
+      </nav>
+
+      <div class="header_text">
+        <div class="header_title">Интересные кулинарные советы</div>
+
+        <div class="header_description">
+          Это идеальное место, чтобы делиться своими кулинарными шедеврами и
+          вдохновлять других каждый день
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="recipes_section">
-            <div class="recipe_card">
-               <div class="recipe_img"></div>
-                    <div class="recipe_info">
-                            <div class="post_data">
-                                <div class="avatar">
-                                    <img src="./assets/img/m2.png" alt="" class="avatar_img">
-                                </div>
-                                <div class="author">
-                                    Михаил Степанович
-                                </div>
-                                <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                <div class="date">
-                                    Февраль 17,2025
-                                </div>
-                                <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                <div class="time">
-                                    15:33
-                                </div>
-                                <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                <div class="comments_count">
-                                    4 комментария
-                                </div>
-                            </div>
-                            <div class="recipe_title">
-                                Как приготовить идеальный стейк в домашних условиях
-                            </div>
-                            <img src="./assets/svg/line.svg" alt="line" class="recipe_line">
-                            <div class="ingredients">
-                                Всё совсем несложно, нужно всего лишь...
-                            </div>
-                            <a href="https://nocketin.github.io/Food_Zero_Recipes/advice" class="read_more">
-                                Смотреть совет
-                                <img src="./assets/svg/arrow-right.svg" alt="arrow" class="arrow_right">
-                            </a>
-                    </div>
+      <section class="recipes_section">
+        <div class="recipe_card">
+            <img src="./assets/img/2.jpg" class="recipe_img" id="zoomable" />
+            <div id="overlay">
+              <img id="zoomedImg" src="" />
             </div>
+          <div class="recipe_info">
+            <div class="post_data">
+              <div class="avatar">
+                <img src="./assets/img/m2.png" alt="" class="avatar_img" />
+              </div>
+              <div class="author">Михаил Степанович</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="date">Февраль 17,2025</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="time">15:33</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="comments_count">4 комментария</div>
+            </div>
+            <div class="recipe_title">
+              Как приготовить идеальный стейк в домашних условиях
+            </div>
+            <img src="./assets/svg/line.svg" alt="line" class="recipe_line" />
+            <div class="ingredients">
+              Всё совсем несложно, нужно всего лишь...
+            </div>
+            <a
+              href="https://nocketin.github.io/Food_Zero_Recipes/advice"
+              class="read_more"
+            >
+              Смотреть совет
+              <img
+                src="./assets/svg/arrow-right.svg"
+                alt="arrow"
+                class="arrow_right"
+              />
+            </a>
+          </div>
+        </div>
 
-            <div class="recipe_card">
-                <div class="recipe_img2 recipe_img"></div>
-                     <div class="recipe_info">
-                             <div class="post_data">
-                                 <div class="avatar">
-                                     <img src="./assets/img/m2.png" alt="" class="avatar_img">
-                                 </div>
-                                 <div class="author">
-                                     Олег Малюк
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="date">
-                                     Январь 15,2025
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="time">
-                                     18:38
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="comments_count">
-                                     3 комментария
-                                 </div>
-                             </div>
-                             <div class="recipe_title">
-                                Соус как в итальянских ресторанах
-                             </div>
-                             <img src="./assets/svg/line.svg" alt="line" class="recipe_line">
-                             <div class="ingredients">
-                                Главный секрет всех знаменитых итальянских ресторанов заключается в...
-                             </div>
-                             <a href="" class="read_more">
-                                    Смотреть совет
-                                 <img src="./assets/svg/arrow-right.svg" alt="arrow" class="arrow_right">
-                             </a>
-                     </div>
-             </div>
+        <div class="recipe_card">
+            <img src="./assets/img/3.jfif" class="recipe_img" id="zoomable" />
+            <div id="overlay">
+              <img id="zoomedImg" src="" />
+            </div>
+          <div class="recipe_info">
+            <div class="post_data">
+              <div class="avatar">
+                <img src="./assets/img/m2.png" alt="" class="avatar_img" />
+              </div>
+              <div class="author">Олег Малюк</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="date">Январь 15,2025</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="time">18:38</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="comments_count">3 комментария</div>
+            </div>
+            <div class="recipe_title">Соус как в итальянских ресторанах</div>
+            <img src="./assets/svg/line.svg" alt="line" class="recipe_line" />
+            <div class="ingredients">
+              Главный секрет всех знаменитых итальянских ресторанов заключается
+              в...
+            </div>
+            <a href="" class="read_more">
+              Смотреть совет
+              <img
+                src="./assets/svg/arrow-right.svg"
+                alt="arrow"
+                class="arrow_right"
+              />
+            </a>
+          </div>
+        </div>
 
-             <div class="recipe_card">
-                <div class="recipe_img3 recipe_img"></div>
-                     <div class="recipe_info">
-                             <div class="post_data">
-                                 <div class="avatar">
-                                     <img src="./assets/img/m3.webp" alt="" class="avatar_img">
-                                 </div>
-                                 <div class="author">
-                                     Роман Смирнов
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="date">
-                                     Март 14,2025
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="time">
-                                     10:20
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="comments_count">
-                                     1 комментарий
-                                 </div>
-                             </div>
-                             <div class="recipe_title">
-                                Изумительное тесто, пышное как облачко
-                             </div>
-                             <img src="./assets/svg/line.svg" alt="line" class="recipe_line">
-                             <div class="ingredients">
-                                Для этого теста необходима всего одна чайная ложка...
-                             </div>
-                             <a href="" class="read_more">
-                                    Смотреть совет
-                                 <img src="./assets/svg/arrow-right.svg" alt="arrow" class="arrow_right">
-                             </a>
-                     </div>
-             </div>
+        <div class="recipe_card">
+            <img src="./assets/img/4.jpg" class="recipe_img" id="zoomable" />
+            <div id="overlay">
+              <img id="zoomedImg" src="" />
+            </div>
+          <div class="recipe_info">
+            <div class="post_data">
+              <div class="avatar">
+                <img src="./assets/img/m3.webp" alt="" class="avatar_img" />
+              </div>
+              <div class="author">Роман Смирнов</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="date">Март 14,2025</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="time">10:20</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="comments_count">1 комментарий</div>
+            </div>
+            <div class="recipe_title">
+              Изумительное тесто, пышное как облачко
+            </div>
+            <img src="./assets/svg/line.svg" alt="line" class="recipe_line" />
+            <div class="ingredients">
+              Для этого теста необходима всего одна чайная ложка...
+            </div>
+            <a href="" class="read_more">
+              Смотреть совет
+              <img
+                src="./assets/svg/arrow-right.svg"
+                alt="arrow"
+                class="arrow_right"
+              />
+            </a>
+          </div>
+        </div>
 
-             <div class="recipe_card">
-                <div class="recipe_img4 recipe_img"></div>
-                     <div class="recipe_info">
-                             <div class="post_data">
-                                 <div class="avatar">
-                                     <img src="./assets/img/m4.png" alt="" class="avatar_img">
-                                 </div>
-                                 <div class="author">
-                                     Юлия Мисюченко
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="date">
-                                     Март 05,2025
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="time">
-                                     11:25
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider">
-                                 <div class="comments_count">
-                                     1 комментарий
-                                 </div>
-                             </div>
-                             <div class="recipe_title">
-                                Правильный бульон для супа
-                             </div>
-                             <img src="./assets/svg/line.svg" alt="line" class="recipe_line">
-                             <div class="ingredients">
-                                Когда узнала, была в шоке...
-                             </div>
-                             <a href="" class="read_more">
-                                    Смотреть совет
-                                 <img src="./assets/svg/arrow-right.svg" alt="arrow" class="arrow_right">
-                             </a>
-                     </div>
-             </div>
+        <div class="recipe_card">
+            <img src="./assets/img/5.jpg" class="recipe_img" id="zoomable" />
+            <div id="overlay">
+              <img id="zoomedImg" src="" />
+            </div>
+          <div class="recipe_info">
+            <div class="post_data">
+              <div class="avatar">
+                <img src="./assets/img/m4.png" alt="" class="avatar_img" />
+              </div>
+              <div class="author">Юлия Мисюченко</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="date">Март 05,2025</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="time">11:25</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="comments_count">1 комментарий</div>
+            </div>
+            <div class="recipe_title">Правильный бульон для супа</div>
+            <img src="./assets/svg/line.svg" alt="line" class="recipe_line" />
+            <div class="ingredients">Когда узнала, была в шоке...</div>
+            <a href="" class="read_more">
+              Смотреть совет
+              <img
+                src="./assets/svg/arrow-right.svg"
+                alt="arrow"
+                class="arrow_right"
+              />
+            </a>
+          </div>
+        </div>
 
-             <div class="recipe_card">
-                <div class="recipe_img5 recipe_img"></div>
-                     <div class="recipe_info">
-                             <div class="post_data">
-                                 <div class="avatar">
-                                     <img src="./assets/img/m6.webp" alt="" class="avatar_img">
-                                 </div>
-                                 <div class="author">
-                                     Алексей Бушкевич
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider"> 
-                                 <div class="date">
-                                     Февраль 24,2025
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider"> 
-                                 <div class="time">
-                                     18:40
-                                 </div>
-                                 <img src="./assets/svg/green_divider.svg" alt="divider" class="divider"> 
-                                 <div class="comments_count">
-                                     4 комментария
-                                 </div>
-                             </div>
-                             <div class="recipe_title">
-                                Искусство подачи десертов
-                             </div>
-                             <img src="./assets/svg/line.svg" alt="line" class="recipe_line">
-                             <div class="ingredients">
-                                Этим фокусам я научился, когда попал на работу в французский ресторан...
-                             </div>
-                             <a href="" class="read_more">
-                                    Смотреть совет
-                                 <img src="./assets/svg/arrow-right.svg" alt="arrow" class="arrow_right">
-                             </a>
-                     </div>
-             </div>
+        <div class="recipe_card">
+            <img src="./assets/img/7.jpg" class="recipe_img" id="zoomable" />
+            <div id="overlay">
+              <img id="zoomedImg" src="" />
+            </div>
+          <div class="recipe_info">
+            <div class="post_data">
+              <div class="avatar">
+                <img src="./assets/img/m6.webp" alt="" class="avatar_img" />
+              </div>
+              <div class="author">Алексей Бушкевич</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="date">Февраль 24,2025</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="time">18:40</div>
+              <img
+                src="./assets/svg/green_divider.svg"
+                alt="divider"
+                class="divider"
+              />
+              <div class="comments_count">4 комментария</div>
+            </div>
+            <div class="recipe_title">Искусство подачи десертов</div>
+            <img src="./assets/svg/line.svg" alt="line" class="recipe_line" />
+            <div class="ingredients">
+              Этим фокусам я научился, когда попал на работу в французский
+              ресторан...
+            </div>
+            <a href="" class="read_more">
+              Смотреть совет
+              <img
+                src="./assets/svg/arrow-right.svg"
+                alt="arrow"
+                class="arrow_right"
+              />
+            </a>
+          </div>
+        </div>
 
-             <div class="pagination">
-                <div class="pagination_item">
-                    Пред
-                </div>
-                <div class="pagination_item">
-                    1
-                </div>
-                <div class="pagination_item">
-                    2
-                </div>
-                <div class="pagination_item">
-                    3
-                </div>
-                <div class="pagination_item">
-                    След
-                </div>
-             </div>
-        </section>
+        <div class="pagination">
+          <div class="pagination_item">Пред</div>
+          <div class="pagination_item">1</div>
+          <div class="pagination_item">2</div>
+          <div class="pagination_item">3</div>
+          <div class="pagination_item">След</div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer_info">
-          <div class="footer_food_zero">
-              Food <br> Zero.
-          </div>
-          <div class="footer_contacts">
-              <a href="https://nocketin.github.io/Food_Zero_Recipes/navigation" class="footer_contact">
-                  Контакты
-              </a>
-              <a href="https://nocketin.github.io/Food_Zero_Recipes/" class="footer_contact">
-                  Рецепты  
-              </a>
-          </div>
+      <div class="footer_info">
+        <div class="footer_food_zero">
+          Food <br />
+          Zero.
+        </div>
+        <div class="footer_contacts">
+          <a
+            href="https://nocketin.github.io/Food_Zero_Recipes/navigation"
+            class="footer_contact"
+          >
+            Контакты
+          </a>
+          <a
+            href="https://nocketin.github.io/Food_Zero_Recipes/"
+            class="footer_contact"
+          >
+            Рецепты
+          </a>
+        </div>
 
-          <div class="footer_email">
-              <div class="footer_never_miss_a_recipe">
-                  Не пропустите новые рецепты
-              </div>
-              <div class="subscribe_form">
+        <div class="footer_email">
+          <div class="footer_never_miss_a_recipe">
+            Не пропустите новые рецепты
+          </div>
+          <div class="subscribe_form">
+            <input
+              maxlength="30"
+              type="email"
+              class="input_email"
+              placeholder="Адрес электронной почты"
+            />
 
-                <input maxlength="30" type="email" class="input_email" placeholder="Адрес электронной почты">
-
-             
-                  <button type="submit" class="subscribe_button">Отправить</button>
-              </div>
-              <div class="join_text">
-                  Присоединяйтесь к нашим подписчикам и получайте лучшие рецепты каждую неделю!
-              </div>
+            <button type="submit" class="subscribe_button">Отправить</button>
           </div>
-        </div>  
-        <img src="./assets/svg/footer_line.svg" alt="line" class="footer_line">
-        <div class="footer_socials">
-          <div class="all_rights_reserved">
-              © 2025 FoodZero. Все права защищены.
+          <div class="join_text">
+            Присоединяйтесь к нашим подписчикам и получайте лучшие рецепты
+            каждую неделю!
           </div>
-          <div class="social_icons">
-              <img src="./assets/svg/insta.svg" alt="insta" class="insta">
-              <img src="./assets/svg/twitter.svg" alt="twitter" class="twwitter">
-              <img src="./assets/svg/facebook.svg" alt="facebook" class="facebook">
-              <img src="./assets/svg/youtube.svg" alt="youtube" class="youtube">
-          </div>
+        </div>
+      </div>
+      <img src="./assets/svg/footer_line.svg" alt="line" class="footer_line" />
+      <div class="footer_socials">
+        <div class="all_rights_reserved">
+          © 2025 FoodZero. Все права защищены.
+        </div>
+        <div class="social_icons">
+          <img src="./assets/svg/insta.svg" alt="insta" class="insta" />
+          <img src="./assets/svg/twitter.svg" alt="twitter" class="twwitter" />
+          <img
+            src="./assets/svg/facebook.svg"
+            alt="facebook"
+            class="facebook"
+          />
+          <img src="./assets/svg/youtube.svg" alt="youtube" class="youtube" />
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
+  <script src="./js/zoom.js"></script>
 </html>
