@@ -673,9 +673,7 @@ main{
 }
     /* Other Recipes Section */
 
-
-.previous_recipe{
-    background-image: url(../assets/img/previous_recipe_img.png);
+.other_recipe{
     background-size: 100% 100%;
 
     display: flex;
@@ -683,23 +681,33 @@ main{
     align-items: center;
     justify-content: center;
 
-    width: 50%;
+    flex: 0 0 50%;
 
     text-decoration: none;
 }
 
-.next_recipe{
+.first_recipe{
+    background-image: url(../assets/img/previous_recipe_img.png);
+}
+
+.second_recipe{
     background-image: url(../assets/img/next_recipe_img.png);
-    background-size: 100% 100%;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.third_recipe{
+    background-image: url(../assets/img/3.jfif);
+}
 
-    width: 50%;
+.fourth_recipe{
+    background-image: url(../assets/img/4.jpg);
+}
 
-    text-decoration: none;
+.fifth_recipe{
+    background-image: url(../assets/img/5.jpg);
+}
+
+.sixth_recipe{
+    background-image: url(../assets/img/7.jpg);
 }
 
 .other_recipe_title{
@@ -712,6 +720,7 @@ main{
     text-align: center;
 
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .recipe_navigation{
@@ -720,6 +729,8 @@ main{
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
+    background-color: transparent;
+    border:none;
 
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -732,11 +743,38 @@ main{
     gap: 50px;
 }
 
+.prev_recipe_phone{
+    display: none;
+}
+
+.next_recipe_phone{
+    display: none;
+}
+
+.prev_recipe{
+    position: absolute;
+    left: 15%;
+    top: 32%;
+}
+.next_recipe{
+    position: absolute;
+    left: 68%;
+    top: 32%;
+}
+
 .other_recipes_section{
+    overflow: hidden;
     display: flex;
     height: 356px;
     width: 100%;
     margin-bottom: 128px;
+    position: relative;
+}
+
+.other_recipes_list{
+    display: flex;
+    height: 356px;
+    width: 100%;
 }
 
 .left_white_arrow{
@@ -747,7 +785,6 @@ main{
 .right_white_arrow{
     margin-left: 25px;
 }
-
 
     /* Comments Section */
 .comments_section{
@@ -1211,29 +1248,38 @@ textarea {
         margin-bottom: 60px;
     }
 
-    .previous_recipe,
-    .next_recipe {
-        width: 380px;
+    .other_recipe {
+        flex: 0 0 100%;
         height: 200px;
         background-size: cover;
     }
 
     .recipe_navigation {
-        font-size: 16px;
-        gap: 20px;
+        display: none;
+    }
+
+   
+    .prev_recipe_phone{
+        display: flex;
+        position: absolute;
+        left: 15%;
+        top: 35%;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .next_recipe_phone{
+        display: flex;
+        position: absolute;
+        left: 68%;
+        top: 35%;
+        background-color: transparent;
+        border: none;
     }
 
     .other_recipe_title {
         font-size: 20px;
         line-height: 30px;
-    }
-
-    .left_white_arrow {
-        display: none;
-    }
-
-    .right_white_arrow {
-        display: none;
     }
 
     .comments_section {
