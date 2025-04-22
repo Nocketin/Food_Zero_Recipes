@@ -687,27 +687,59 @@ main{
 }
 
 .first_recipe{
-    background-image: url(../assets/img/previous_recipe_img.png);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/previous_recipe_img.png);
+    background-size: cover;
+    background-position: center;
+    color: white; 
 }
 
-.second_recipe{
+/* .second_recipe{
     background-image: url(../assets/img/next_recipe_img.png);
-}
-
+} */
+.second_recipe {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/next_recipe_img.png);
+    background-size: cover;
+    background-position: center;
+    color: white; 
+  }
 .third_recipe{
-    background-image: url(../assets/img/3.jfif);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/3.jfif);
+    background-size: cover;
+    background-position: center;
+    color: white; 
 }
 
 .fourth_recipe{
-    background-image: url(../assets/img/4.jpg);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; 
 }
 
 .fifth_recipe{
-    background-image: url(../assets/img/5.jpg);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; 
 }
 
 .sixth_recipe{
-    background-image: url(../assets/img/7.jpg);
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/img/7.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; 
 }
 
 .other_recipe_title{
