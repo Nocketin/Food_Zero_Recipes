@@ -13,3 +13,10 @@ overlay.addEventListener('click', () => {
   overlay.style.display = 'none';
   zoomedImg.src = '';
 });
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    overlay.style.display = 'none';
+    zoomedImg.src = '';
+  }
+});
